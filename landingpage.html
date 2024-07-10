@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+             width:100%;
+             height:100vh;
+             font-family: sans-serif;
+             padding:10px;
+        }
+       body header{
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)) ,url(landingpage.jpg);
+            background-size: cover;
+        }
+        .logo
+        {
+            color:white;
+            font-size:2em;
+            letter-spacing: 2px;
+        }
+        .menu
+        {
+            display:flex;
+            justify-content:right;
+            float:center;
+            padding:10px;
+        }
+
+       .menu a
+       {
+        text-decoration:none;
+        color:#f0f8ff;
+        padding:10px 20px;
+        font-size:20px;
+       }
+       .menu a:before{
+      content: '';
+      /* position:absolute; */
+      top:0;
+      left:0;
+      width:0%;
+      height:0%;
+      border-bottom:2px rgb(243, 241, 245);
+      transition:0.4s linear;
+       }
+      .menu a:hover:before{
+        width:90%;
+      }
+       menu
+       .register
+       {
+        padding:10px 20px;
+       }
+  .register a
+  {
+    text-decoration:none;
+    color:white;
+   padding:4px;
+    font-size:20px;
+    background:rgb(5, 139, 249);
+    border-radius:8px;
+  }
+
+
+  .register a:hover
+   {
+background-color:transparent;
+border:1px solid rgb(26, 8, 224);
+   }
+  .h-text
+  {
+    max-width:600px;
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+   
+  }
+  .h-text span{
+    letter-spacing:5px;
+  }
+
+  .h-text h1{
+  font-size:3em;
+  } 
+  .h-text a{
+    text-decoration:none;
+    background:rgb(233, 102, 9);
+    color:rgb(218, 220, 227);
+    padding:10px 20px;
+    letter-spacing:10px;
+    transition:0.4s;
+    border-radius: 45%;
+  }
+  .h-text a:hover{
+    background-color:transparent;
+border:1px solid rgb(72, 239, 6);
+  }
+    </style>
+</head>
+<body>
+    <header>
+
+<nav>
+    <div class="logo">5MINs</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Location</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </div>
+    <div class="register">
+        <a href="#">Sign In</a>
+    </div>
+</nav>
+
+<section class="h-text">
+    <span>Let's Order It!!</span>
+    <h1>Home<br> 
+      Food Delivery
+    </h1>
+     <br><br>
+     <a href="#">Order</a><br>
+</section>
+    </header>
+</body>
+</html>
